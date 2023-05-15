@@ -1,9 +1,12 @@
 import Search from "../Search/Search";
+import { useState } from "react";
 
 const WeatherContainer = () => {
+  const [info, setInfo] = useState("");
+
   return (
     <div>
-      <Search />
+      <Search setInfo={setInfo} />
     </div>
   );
 };
