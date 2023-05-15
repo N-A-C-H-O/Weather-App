@@ -1,7 +1,11 @@
+import WeatherContainer from "./components/WeatherContainer/WeatherContainer";
+
 function App() {
   return (
-    <div></div>
-  )
+    <>
+      <WeatherContainer />
+    </>
+  );
 }
 
-export default App
+export default App;

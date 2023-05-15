@@ -15,6 +15,7 @@ a {
   color: inherit;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
