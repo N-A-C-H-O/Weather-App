@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import "./Search.css";
 
 const Search = ({ setInfo }) => {
   const form = useRef("");
@@ -12,10 +13,8 @@ const Search = ({ setInfo }) => {
 
   return (
     <form onSubmit={handleSubmit} ref={form}>
-      <div>
-        <label htmlFor="inputNameCity" >Ingrese su ciudad</label>
-        <input type="text" id="inputNameCity" />
-      </div>
+      <label htmlFor="inputNameCity">Ingrese su ciudad</label>
+      <input type="text" id="inputNameCity"/>
       <button type="submit">Enviar</button>
     </form>
   );

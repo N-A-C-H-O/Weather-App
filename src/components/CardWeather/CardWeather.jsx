@@ -1,16 +1,16 @@
+import "./CardWeather.css";
+
 const CardWeather = ({ data }) => {
   return (
-    <div>
+    <div className="weather-card">
       <h2>
         {data.name}, {data.country}
       </h2>
-      <div>
-        <p>Temperatura: {Math.round(data.temp)}°</p>
-        <p>Humedad: {data.humidity}%</p>
-        <p>Wind: {data.wind.speed}</p>
+      <p className="weather-info">{data.state.description}</p>
+      <div className="weather-state">
+        <img src={`https://openweathermap.org/img/wn/${data.state.icon}@2x.png`} alt="icon weather" />
         <div>
-          <p>{data.state.description}</p>
-          <img src={`https://openweathermap.org/img/wn/${data.state.icon}@2x.png`} alt="icon weather" />
+          <h3>{Math.round(data.temp)}°</h3>
         </div>
       </div>
     </div>

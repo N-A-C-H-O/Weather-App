@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import CardWeather from "../CardWeather/CardWeather";
+import "./ContentContainer.css";
 
 const ContentContainer = ({ info }) => {
   const [data, setData] = useState(null);
