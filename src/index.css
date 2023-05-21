@@ -9,6 +9,7 @@ body {
   height: 100vh;
   max-width: 100%;
   box-sizing: border-box;
+  background-color: #c4def9;
 }
 
 button {

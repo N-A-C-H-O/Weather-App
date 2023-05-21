@@ -13,9 +13,11 @@ const Search = ({ setInfo }) => {
 
   return (
     <form onSubmit={handleSubmit} ref={form}>
-      <label htmlFor="inputNameCity">Ingrese su ciudad</label>
-      <input type="text" id="inputNameCity"/>
-      <button type="submit">Enviar</button>
+      <label htmlFor="inputNameCity">Type your city</label>
+      <div>
+        <input type="text" id="inputNameCity" placeHolder="City name" autoComplete="off"/>
+        <button type="submit">Search</button>
+      </div>
     </form>
   );
 };

@@ -34,7 +34,7 @@ const ContentContainer = ({ info }) => {
     }
   }, [info]);
 
-  return data && (loading ? "Cargando..." : <CardWeather data={data} />);
+  return loading ? "Loading..." : <CardWeather data={data} />;
 };
 
 export default ContentContainer;

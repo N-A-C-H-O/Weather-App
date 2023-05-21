@@ -1,10 +1,11 @@
 .weather-card {
-    margin-top: 2.5em;
+    margin: 2em;
 }
 
 .weather-card h2 {
     padding: 10px;
     text-align: center;
+    margin-bottom: -10px;
 }
 
 .weather-info {
@@ -16,7 +17,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1.5em;
+    gap: 1em;
 }
 
 .weather-state h3 {
